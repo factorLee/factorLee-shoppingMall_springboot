@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1120px;
+  font-family: "Helvetica";
+  
+}
+
+.navbar{
+  /* display: flex; */
+  justify-content:center; 
+  align-items : center;
+}
+
+.logo{
+  line-height: 60px;
+  float: left;
+}
+
+.logo img{
+  vertical-align: middle;
+}
+
+.navbar ul{
+  float: right;
+  
+}
+
+.navbar li{
+  list-style-type: none;
+  float: left;
+  /* margin-right: 20px; */
+/*   margin-top: 30px; */
+  /* display: inline-block; */
+  padding: 20px;
+  
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  font-size: 13px;
+  text-align: center;
+}
+
+
+.hero_header{
+  height: 450px;
+  width: 100%;
+}
+
+body h1{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-style: bold;
+  color: #545454;
+}
+
+/* .bestProduct {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 1120px;
+  text-align: center;
+} */
+
+.bestProduct p {
+	width: 350px;
+	height: 30px;
+	
+	margin-top: 10px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.bestProduct img{
+  width: 350px;
+  height: 350px;
+}
+
+.bestProduct a{
+  text-decoration: none;
+  color: black;
+  float: left;
+  font-size: 16px;
+  
+  padding: 0px 10px 40px 10px;
+}
+
+/* .products {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 1120px;
+  text-align: center;
+} */
+
+.products p {
+	width: 230px;
+	height: 30px;
+	
+	margin-top: 10px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.products img{
+  width: 230px;
+  height: 230px;
+}
+
+.products a{
+  text-decoration: none;
+  color: black;
+  float: left;
+  font-size: 16px;
+  
+  padding: 0px 25px 40px 25px;
+}
+
+.products ul{
+	text-align:center;
+	padding: 0px;
+}
+
+.products li{
+	display:inline-block;
+}
+
+
+.price{
+  margin-top: 4px;
+  margin-bottom: 30px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100px;
+}

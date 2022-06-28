@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.giftshop.mapper.WebMapper">
+
+	<!-- WEB API -->
+	<select id="selectProductRegister" resultType="ProductRegisterVO">
+		SELECT * FROM productform
+	</select>
+	
+<!-- 	<insert id="insertProductRegister" parameterType="ProductRegisterVO">
+		INSERT INTO productform (pr_thumbnail,pr_category,pr_title,pr_contents,pr_faq01,pr_faq02,pr_faq03,pr_faq04) 
+		
+		VALUES(
+		#{pr_thumbnail},
+		#{pr_category},
+		#{pr_title},
+		#{pr_contents},
+		#{pr_faq01},
+		#{pr_faq02},
+		#{pr_faq03},
+		#{pr_faq04}
+		)
+		
+		
+	</insert> -->
+
+
+	<insert id="insertProductRegister" parameterType="ProductRegisterVO">
+		INSERT INTO test_formmm (pr_thumbnail,pr_category,pr_title,pr_contents) 
+		
+		VALUES(
+		#{pr_thumbnail},
+		#{pr_category},
+		#{pr_title},
+		#{pr_contents}
+		);
+		
+		INSERT INTO test_form (faq01, faq02, faq03, faq04)
+		
+		VALUES(
+		#{pr_faq01},
+		#{pr_faq02},
+		#{pr_faq03},
+		#{pr_faq04}
+		)
+		
+	</insert>
+
+	<!-- <select id="selectProductRegister" resultType="ProductRegisterVO">
+		SELECT * FROM test_form
+	</select> -->
+	
+	<insert id="inserttestVO" parameterType="testVO">
+		INSERT INTO test_formmm(itemName,userName,phoneNum,email,content) 
+		
+		VALUES(
+		'test',
+		'testname',
+		'testnum',
+		'testemail',
+		'testcontents342'
+	<!-- 	#{itemName},
+		#{userName},
+		#{phoneNum},
+		#{email},
+		#{content} -->
+		);
+	</insert>
+
+</mapper>

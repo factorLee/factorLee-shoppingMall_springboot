@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* 공통 */
+.w-80{
+	width:80%;
+}
+
+.form-group{
+	margin-bottom:1rem;
+}
+
+.main-panel{
+	min-height:1000px;
+}
+
+
+/* 사이드바 */
+.sidebar-r {
+	right: -450px;
+	max-width: 450px;
+	position: relative;
+	top: 70px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e6e5f2),
+		to(#4599cd));
+	background: linear-gradient(to bottom, #e6e5f2, #4599cd);
+	font-family: 'NanumBarunGothic', "Rubik", sans-serif;
+	padding: 0;
+	width: 0%;
+	z-index: 11;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	box-shadow: 0px 0px 20px 0px cornflowerblue;
+	height: calc(100vh - 70px);
+}
+
+.side-On {
+	right: 0px;
+	width:80%;
+}
+
+
+.sideBody{
+	padding:0.5rem 2rem;
+}
+
+/* .sideBtn{
+	display:none;
+} */
